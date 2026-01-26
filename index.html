@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="PT IIB (Izin Indonesia Berkarya) - Layanan pendirian CV, PT, Yayasan, Koperasi, dan badan usaha lainnya dengan proses cepat dan transparan.">
+  <meta name="keywords" content="pendirian PT, pendirian CV, izin usaha, legalitas usaha, NPWP, NIB, akta pendirian">
+  <title>PT IIB - Izin Indonesia Berkarya | Layanan Legalitas Usaha</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-image">
+          <img src="assets/images/logo.png" alt="PT IIB Logo">
+        </div>
+        <div class="logo-text">
+          <h1>PT IIB</h1>
+          <span>Izin Indonesia Berkarya</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#harga">Harga</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20konsultasi%20mengenai%20legalitas%20usaha%20saya."
+          class="nav-cta" target="_blank">Hubungi Kami</a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="closeMobileMenu()">Home</a>
+    <a href="#tentang" onclick="closeMobileMenu()">Tentang Kami</a>
+    <a href="#layanan" onclick="closeMobileMenu()">Layanan</a>
+    <a href="#harga" onclick="closeMobileMenu()">Harga</a>
+    <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+    <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20konsultasi%20mengenai%20legalitas%20usaha%20saya."
+      onclick="closeMobileMenu()" target="_blank">Hubungi Kami</a>
+  </nav>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider" id="home">
+    <div class="slides-container">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-bg" style="background-image: url('assets/images/hero_slide_1.png')">
+        </div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="slide-content">
+            <div class="hero-badge"><span></span> Konsultasi Gratis</div>
+            <h1>Bangun Bisnis Impian Anda <span>Tanpa Ribet</span></h1>
+            <p class="hero-description">Layanan pendirian CV & PT dengan proses transparan dan pendampingan ahli hingga
+              tuntas.</p>
+            <div class="hero-buttons">
+              <a href="#harga" class="btn btn-primary">Lihat Paket Harga</a>
+              <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20konsultasi%20mengenai%20pendirian%20PT%2FCV%20tanpa%20ribet."
+                class="btn btn-outline" target="_blank">Konsultasi Gratis</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('assets/images/hero_slide_2.png')">
+        </div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="slide-content">
+            <div class="hero-badge"><span></span> Legalitas Terjamin</div>
+            <h1>Legalitas Aman, Bisnis <span>Terkendali</span></h1>
+            <p class="hero-description">Pengurusan izin usaha, Yayasan, dan Koperasi untuk perlindungan hukum bisnis
+              Anda.</p>
+            <div class="hero-buttons">
+              <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20Cek%20Layanan%20Izin%20Usaha%2C%20Yayasan%2C%20dan%20Koperasi."
+                class="btn btn-primary" target="_blank">Cek Layanan</a>
+              <a href="#harga" class="btn btn-outline">Daftar Harga</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('assets/images/hero_slide_3.png')">
+        </div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="slide-content">
+            <div class="hero-badge"><span></span> Tim Ahli IIB</div>
+            <h1>Konsultasi Gratis dengan <span>Ahli Kami</span></h1>
+            <p class="hero-description">Dapatkan solusi legalitas terbaik langsung dari pakarnya. Kami siap membantu
+              setiap langkah Anda.</p>
+            <div class="hero-buttons">
+              <a href="https://wa.me/6281287903614?text=Halo%20Tim%20Ahli%20IIB%2C%20saya%20ingin%20konsultasi%20gratis%20mengenai%20legalitas%20usaha%20saya."
+                class="btn btn-primary" target="_blank">Chat Via WhatsApp</a>
+              <a href="#faq" class="btn btn-outline">Lihat FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Nav -->
+    <div class="slider-nav">
+      <button class="nav-dot active" data-index="0"></button>
+      <button class="nav-dot" data-index="1"></button>
+      <button class="nav-dot" data-index="2"></button>
+    </div>
+
+    <button class="slider-btn prev">❮</button>
+    <button class="slider-btn next">❯</button>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="section about" id="tentang">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="assets/images/about_us.png" alt="Tim Ahli PT IIB">
+        </div>
+        <div class="about-content reveal">
+          <div class="section-badge">Tentang Kami</div>
+          <h2>Partner Terpercaya untuk <span>Legalitas Bisnis</span> Anda</h2>
+          <p>PT IIB (Izin Indonesia Berkarya) hadir sebagai solusi profesional untuk membantu pengusaha dan pemilik
+            bisnis di Indonesia dalam mengurus berbagai legalitas badan usaha dengan cara yang lebih transparan, cepat,
+            dan terjangkau.</p>
+          <p>Dengan tim ahli yang berpengalaman, kami telah membantu ribuan klien mendirikan CV, PT, Yayasan, hingga
+            Koperasi. Fokus kami adalah memberikan ketenangan pikiran bagi Anda agar bisa fokus sepenuhnya pada
+            pertumbuhan bisnis, sementara urusan hukum biarlah kami yang tangani.</p>
+
+          <ul class="about-checklist">
+            <li><span>✓</span> Proses Transparan & Terintegrasi</li>
+            <li><span>✓</span> Pendampingan Ahli Hingga Selesai</li>
+            <li><span>✓</span> Harga Kompetitif Tanpa Biaya Tersembunyi</li>
+            <li><span>✓</span> Layanan Cepat & Akurat</li>
+          </ul>
+
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20tahu%20lebih%20lanjut%20mengenai%20layanan%20legalitas%20Anda."
+            class="btn btn-primary" target="_blank">Pelajari Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <h2>Layanan Kami</h2>
+        <p>Kami menyediakan berbagai layanan pendirian badan usaha sesuai kebutuhan Anda</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/cv.png" alt="Icon CV"></div>
+          <h4>Pendirian CV</h4>
+          <p>Persekutuan Komanditer</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/pt.png" alt="Icon PT"></div>
+          <h4>Pendirian PT</h4>
+          <p>Perseroan Terbatas</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/yayasan.png" alt="Icon Yayasan"></div>
+          <h4>Pendirian Yayasan</h4>
+          <p>Sosial, Pendidikan, Keagamaan</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/koperasi.png" alt="Icon Koperasi"></div>
+          <h4>Pendirian Koperasi</h4>
+          <p>Badan usaha bersama</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/ud.png" alt="Icon UD"></div>
+          <h4>Usaha Dagang (UD)</h4>
+          <p>Usaha perorangan sederhana</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/perorangan.png" alt="Icon Perorangan"></div>
+          <h4>Usaha Perorangan</h4>
+          <p>Tanpa badan hukum formal</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/perkumpulan.png" alt="Icon Perkumpulan"></div>
+          <h4>Perkumpulan</h4>
+          <p>Organisasi berbasis komunitas</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/images/icons/firma.png" alt="Icon Firma"></div>
+          <h4>Firma</h4>
+          <p>Persekutuan perdata</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section pricing" id="harga">
+    <div class="container">
+      <div class="section-header">
+        <h2>Harga Pendirian Usaha</h2>
+        <p>Pilih paket yang sesuai dengan kebutuhan bisnis Anda</p>
+      </div>
+
+      <div class="pricing-tabs">
+        <button class="pricing-tab active" data-tab="populer">Populer</button>
+        <button class="pricing-tab" data-tab="lengkap">Lengkap</button>
+      </div>
+
+      <!-- Populer Packages -->
+      <div class="pricing-grid" id="tab-populer">
+        <!-- Pendirian CV -->
+        <div class="pricing-card reveal">
+          <span class="pricing-badge basic">Basic</span>
+          <div class="pricing-header">
+            <h3>Pendirian CV (full)</h3>
+            <p>Layanan pendirian CV mencakup semua kebutuhan legalitas.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">3 Juta</span>
+            <span class="promo">Promo Bulan Ini</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Foto Copy KTP (Ktp Para pendiri minimal 2 orang)</li>
+            <li>Foto Copy NPWP (Pribadi atau Penanggung Jawab)</li>
+            <li>Surat Sewa (PBB Lunas Terakhir dan IMB)</li>
+            <li>Akta Pendirian, SK Kemenkumham</li>
+            <li>NPWP, SKT, NIB, Efin</li>
+            <li>Pembuatan Rekening Bank</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20tertarik%20dengan%20paket%20Pendirian%20CV%20(3%20Juta).%20Mohon%20infonya."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Pendirian PT (< 1 Miliar) -->
+        <div class="pricing-card featured reveal">
+          <span class="pricing-badge professional">Profesional</span>
+          <div class="pricing-header">
+            <h3>Pendirian PT (full)</h3>
+            <p>Pendirian PT (Modal Kurang dari 1 Miliar).</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">4 Juta</span>
+            <span class="promo">CASHBACK 1,5 JUTA</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Foto Kopi KTP (Pemegang Saham & Pengurus)</li>
+            <li>Foto Copy NPWP (Pemegang Saham & Pengurus)</li>
+            <li>Copy Surat Kontrak Sewa Kantor</li>
+            <li>Mengisi Formulir Pendirian</li>
+            <li>Akta Pendirian, SK Kemenkumham</li>
+            <li>NPWP, SKT, NIB, Efin</li>
+            <li>Pembuatan Rekening Bank</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20tertarik%20dengan%20paket%20Pendirian%20PT%20Profesional%20(4%20Juta).%20Mohon%20infonya."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Pendirian PT (> 1 Miliar) -->
+        <div class="pricing-card premium reveal">
+          <span class="pricing-badge ultimate">Ultimate</span>
+          <div class="pricing-header">
+            <h3>Pendirian PT (full)</h3>
+            <p>Pendirian PT (Modal Lebih dari 1 Miliar).</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">5 Juta</span>
+            <span class="promo">Promo Bulan Ini</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Foto Copy KTP (Pemegang Saham & Pengurus)</li>
+            <li>Foto Copy NPWP (Pemegang Saham & Pengurus)</li>
+            <li>Copy Surat Kontrak Sewa Kantor</li>
+            <li>Mengisi Formulir Pendirian</li>
+            <li>Akta Pendirian, SK Kemenkumham</li>
+            <li>NPWP, SKT, NIB, Efin</li>
+            <li>Pembuatan Rekening Bank</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20tertarik%20dengan%20paket%20Pendirian%20PT%20Ultimate%20(5%20Juta).%20Mohon%20infonya."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+      </div>
+
+      <!-- Lengkap Packages (hidden by default) -->
+      <div class="pricing-grid" id="tab-lengkap" style="display: none;">
+        <!-- Pendirian Koperasi -->
+        <div class="pricing-card reveal">
+          <span class="pricing-badge recommended">Recommended</span>
+          <div class="pricing-header">
+            <h3>Pendirian Koperasi (Full)</h3>
+            <p>Untuk badan usaha dengan struktur kepemilikan jelas.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">8 Juta</span>
+            <span class="promo">Promo Bulan Ini</span>
+          </div>
+          <ul class="pricing-features">
+            <li>KTP pendiri (min. 2 orang)</li>
+            <li>NPWP saham & pengurus (min. 20 orang)</li>
+            <li>Surat Kontrak atau bukti tempat usaha</li>
+            <li>Formulir Pendirian lengkap</li>
+            <li>AKTA PENDIRIAN, SK KEMENKUMHAM</li>
+            <li>NPWP, SKT, NIP</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20bertanya%20tentang%20Pendirian%20Koperasi%20(8%20Juta)."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Pendirian Yayasan -->
+        <div class="pricing-card reveal">
+          <span class="pricing-badge recommended">Recommended</span>
+          <div class="pricing-header">
+            <h3>Pendirian Yayasan (Full)</h3>
+            <p>Untuk bidang sosial, pendidikan, atau keagamaan.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">5,5 Juta</span>
+            <span class="promo">Promo Bulan Ini</span>
+          </div>
+          <ul class="pricing-features">
+            <li>KTP Pendiri (min. 2 orang)</li>
+            <li>NPWP saham & pengurus (min. 5 orang)</li>
+            <li>Surat Kontrak atau bukti tempat usaha</li>
+            <li>Formulir Pendirian lengkap</li>
+            <li>AKTA PENDIRIAN, SK KEMENKUMHAM</li>
+            <li>NPWP, SKT, NIB</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20bertanya%20tentang%20Pendirian%20Yayasan%20(5%2C5%20Juta)."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Pendirian UD -->
+        <div class="pricing-card reveal">
+          <span class="pricing-badge recommended">Recommended</span>
+          <div class="pricing-header">
+            <h3>Pendirian UD (Full)</h3>
+            <p>Usaha Dagang perorangan yang sederhana.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">4,5 Juta</span>
+            <span class="promo">Promo Bulan Ini</span>
+          </div>
+          <ul class="pricing-features">
+            <li>KTP Pendiri (min. 2 orang)</li>
+            <li>NPWP saham & pengurus (min. 1 orang)</li>
+            <li>Surat Kontrak atau bukti tempat usaha</li>
+            <li>Formulir Pendirian lengkap</li>
+            <li>AKTA PENDIRIAN, NPWP, NIB</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20bertanya%20tentang%20Pendirian%20UD%20(4%2C5%20Juta)."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Pendirian Perorangan -->
+        <div class="pricing-card reveal">
+          <span class="pricing-badge recommended">Recommended</span>
+          <div class="pricing-header">
+            <h3>Pendirian Perorangan</h3>
+            <p>Usaha tanpa harus membentuk badan hukum formal.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">1 Juta</span>
+            <span class="promo">DISKON 50%</span>
+          </div>
+          <ul class="pricing-features">
+            <li>KTP & NPWP Pribadi</li>
+            <li>Alamat Usaha Jelas</li>
+            <li>Proses Cepat 1-3 Hari</li>
+            <li>Pengurusan NPWP & NIB</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20bertanya%20tentang%20Pendirian%20Perorangan%20(1%20Juta)."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Pendirian Perkumpulan -->
+        <div class="pricing-card reveal">
+          <span class="pricing-badge recommended">Recommended</span>
+          <div class="pricing-header">
+            <h3>Pendirian Perkumpulan</h3>
+            <p>Organisasi berbasis komunitas atau sosial.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">4,5 Juta</span>
+            <span class="promo">HARGA SPESIAL</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Akta Pendirian Komunitas</li>
+            <li>Pengurusan NPWP</li>
+            <li>Perizinan sesuai kebutuhan</li>
+            <li>Proses Transparan</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20bertanya%20tentang%20Pendirian%20Perkumpulan%20(4%2C5%20Juta)."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Pendirian Firma -->
+        <div class="pricing-card reveal">
+          <span class="pricing-badge basic">Basic</span>
+          <div class="pricing-header">
+            <h3>Pendirian Firma</h3>
+            <p>Persekutuan perdata untuk operasional bersama.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="amount">3 Juta</span>
+            <span class="promo">STOK TERBATAS</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Pembuatan Akta Firma</li>
+            <li>Pengurusan Izin Usaha</li>
+            <li>Legalitas Sah & Aman</li>
+            <li>Sesuai Aturan Hukum</li>
+          </ul>
+          <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20bertanya%20tentang%20Pendirian%20Firma%20(3%20Juta)."
+            class="pricing-cta" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Pilih Paket
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pertanyaan Umum</h2>
+        <p>Temukan jawaban untuk pertanyaan yang sering diajukan</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">01.</span> Apa saja yang dibutuhkan untuk mendirikan CV?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Untuk mendirikan CV Anda memerlukan: Fotokopi KTP minimal 2 pendiri, Fotokopi NPWP pribadi atau
+              penanggung jawab, Surat sewa tempat usaha atau bukti kepemilikan (PBB Lunas Terakhir dan IMB). Setelah
+              proses selesai, Anda akan mendapatkan Akta Pendirian, SK Kemenkumham, NPWP, SKT, NIB, dan Efin.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">02.</span> Berapa lama proses pendirian CV?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Proses pendirian CV biasanya memakan waktu 5-7 hari kerja tergantung kelengkapan dokumen yang Anda
+              berikan. Kami akan membantu mempercepat proses dengan tim yang berpengalaman.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">03.</span> Apakah pendirian CV harus memiliki modal minimum?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Tidak ada ketentuan modal minimum untuk pendirian CV. Anda bisa mendirikan CV dengan modal sesuai
+              kemampuan dan kebutuhan bisnis Anda.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">04.</span> Apa syarat pendirian PT dengan modal kurang dari 1 miliar?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Syarat pendirian PT modal < 1 miliar meliputi: Fotokopi KTP minimal 2 pemegang saham dan pengurus,
+                Fotokopi NPWP para pemegang saham, Surat kontrak sewa atau bukti kepemilikan tempat usaha, dan mengisi
+                formulir pendirian yang kami sediakan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">05.</span> Berapa lama waktu yang diperlukan untuk mendirikan PT dengan modal
+              kurang dari 1 miliar?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Proses pendirian PT dengan modal kurang dari 1 miliar biasanya memakan waktu 7-14 hari kerja, tergantung
+              kelengkapan dokumen dan verifikasi dari instansi terkait.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">06.</span> Apa saja dokumen yang diperlukan untuk pendirian PT dengan modal
+              lebih dari 1 miliar?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Dokumen yang diperlukan sama dengan PT modal kecil, namun proses verifikasi lebih ketat. Diperlukan: KTP
+              dan NPWP pemegang saham, surat kontrak/bukti kepemilikan tempat usaha, dan dokumen pendukung lainnya yang
+              akan kami bantu siapkan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">07.</span> Apakah ada keuntungan khusus mendirikan PT dengan modal
+              besar?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Ya, PT dengan modal besar memiliki kredibilitas lebih tinggi di mata investor dan mitra bisnis, lebih
+              mudah mengakses pembiayaan bank, dan memiliki kapasitas lebih besar untuk proyek-proyek berskala besar.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">08.</span> Berapa lama waktu yang diperlukan untuk mendirikan PT dengan modal
+              lebih dari 1 miliar?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Proses pendirian PT dengan modal > 1 miliar memerlukan waktu sekitar 14-21 hari kerja karena memerlukan
+              verifikasi dan approval yang lebih detail dari berbagai instansi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">09.</span> Apa syarat untuk mendirikan usaha perorangan?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Untuk usaha perorangan, Anda hanya memerlukan: KTP, NPWP pribadi, dan alamat usaha. Prosesnya sangat
+              sederhana dan cepat.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">10.</span> Apakah usaha perorangan bisa memiliki izin usaha resmi?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Ya, usaha perorangan tetap bisa memiliki izin usaha resmi seperti NIB (Nomor Induk Berusaha) dan izin
+              operasional lainnya sesuai jenis usaha yang dijalankan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">11.</span> Berapa lama proses pendirian usaha perorangan?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Proses pendirian usaha perorangan adalah yang paling cepat, biasanya hanya memerlukan 1-3 hari kerja.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">12.</span> Apa saja izin usaha yang bisa Anda bantu urus?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Kami membantu mengurus berbagai izin usaha termasuk: NIB, SIUP, TDP, Izin Lokasi, Izin Lingkungan, dan
+              berbagai perizinan sektor spesifik seperti OSS, BPOM, Halal, dan lainnya.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><span class="faq-number">13.</span> Berapa lama waktu yang diperlukan untuk pengurusan perizinan
+              usaha?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Waktu pengurusan perizinan bervariasi tergantung jenis izin. NIB bisa 1-3 hari, sementara izin sektor
+              spesifik bisa memerlukan 2-4 minggu. Kami akan memberikan estimasi waktu yang jelas sebelum proses
+              dimulai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta" id="contact">
+    <div class="container">
+      <h2>Siap Memulai Bisnis Anda?</h2>
+      <p>Konsultasikan kebutuhan legalitas usaha Anda dengan tim kami secara GRATIS</p>
+      <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20konsultasi%20gratis%20mengenai%20legalitas%20bisnis%20saya."
+        class="btn btn-primary" target="_blank">
+        Hubungi via WhatsApp
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-image">
+              <img src="assets/images/logo.png" alt="PT IIB Logo">
+            </div>
+            <div class="logo-text">
+              <h1>PT IIB</h1>
+              <span>Izin Indonesia Berkarya</span>
+            </div>
+          </a>
+          <p>Layanan legalitas usaha terpercaya dengan proses cepat, transparan, dan harga terjangkau.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Layanan</h4>
+          <ul class="footer-links">
+            <li><a href="#harga">Pendirian CV</a></li>
+            <li><a href="#harga">Pendirian PT</a></li>
+            <li><a href="#harga">Pendirian Yayasan</a></li>
+            <li><a href="#harga">Pendirian Koperasi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Perusahaan</h4>
+          <ul class="footer-links">
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Tim Kami</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Kontak</h4>
+          <ul class="footer-links">
+            <li><a
+                href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20saya%20ingin%20menghubungi%20tim%20marketing.">+62
+                812-8790-3614</a></li>
+            <li><a href="mailto:info@ptiib.co.id">info@ptiib.co.id</a></li>
+            <li><a href="#">Jakarta, Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PT IIB (Izin Indonesia Berkarya). All rights reserved.</p>
+        <p>
+          <a href="#">Kebijakan Privasi</a> | <a href="#">Syarat & Ketentuan</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/6281287903614?text=Halo%20PT%20IIB%2C%20boleh%20tanya-tanya%20seputar%20pendirian%20badan%20usaha%3F"
+    class="whatsapp-btn" target="_blank" aria-label="Chat via WhatsApp">
+    💬
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
