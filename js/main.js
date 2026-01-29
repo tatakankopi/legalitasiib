@@ -5,6 +5,7 @@
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function () {
   // Initialize all components
+  initTheme();
   initHeader();
   initSlider();
   initMobileMenu();
@@ -13,6 +14,37 @@ document.addEventListener('DOMContentLoaded', function () {
   initSmoothScroll();
   initAnimations();
 });
+
+/* ========== Theme Management ========== */
+function initTheme() {
+  const themeToggle = document.getElementById('themeToggle');
+  if (!themeToggle) return;
+
+  const html = document.documentElement;
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  // Determine initial theme
+  const initialTheme = savedTheme || (systemPrefersDark.matches ? 'dark' : 'light');
+  html.setAttribute('data-theme', initialTheme);
+
+  // Toggle theme on click
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+
+  // Optional: Listen for system theme changes if no manual override exists
+  systemPrefersDark.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      const newTheme = e.matches ? 'dark' : 'light';
+      html.setAttribute('data-theme', newTheme);
+    }
+  });
+}
 
 /* ========== Header Scroll Effect ========== */
 function initHeader() {
