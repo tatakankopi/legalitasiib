@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ptiib.co.id/sitemap.xml
+Sitemap: https://legita.id/sitemap.xml

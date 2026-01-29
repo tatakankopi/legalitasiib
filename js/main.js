@@ -1,5 +1,5 @@
 /* ================================================
-   PT IIB - Main JavaScript
+   LEGITA - Main JavaScript
    ================================================ */
 
 // Wait for DOM to be ready
