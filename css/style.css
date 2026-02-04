@@ -1115,6 +1115,13 @@ p {
   align-items: center;
   justify-content: center;
   transition: var(--transition-fast);
+  color: #ffffff;
+}
+
+.footer-social a svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .footer-social a:hover {
